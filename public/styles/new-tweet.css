@@ -1,0 +1,22 @@
+.new-tweet textarea{
+    border: none;
+    width: 100%;
+    height: 38px;
+    background: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.32);
+    outline: none;
+    margin: 0px;
+}
+
+.new-tweet input[type=submit] {
+  color: white;
+  font-family: "Bungee";
+  background-color: #4056A1;
+  float: left;
+}
+
+.new-tweet span{
+  font-family: "Bungee";
+  float: right;
+}
+

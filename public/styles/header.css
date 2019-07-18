@@ -1,0 +1,38 @@
+header.main-header {
+  height: 450px;
+  width: 100%;
+  padding-top: 125px;
+  background-color: coral;
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+}
+
+header.main-header img {
+  /* position: absolute;  */
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  /* margin-top: 50px; */
+}
+ header.main-header h2 {
+  /* position: absolute;  */
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+ }
+
+ #btnTweet{
+  position: relative;
+  max-width: 2%;
+  margin: 0;
+  padding-top: 10px;
+  left: 92%;
+  filter: invert(100%);
+ }
+
+ #btnTweet:hover{
+  transform: translateY(5px);
+ }
+
+ #bold {
+  font-weight: 700;
+}

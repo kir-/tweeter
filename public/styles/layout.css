@@ -17,7 +17,44 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
   font-size: 24px;
+}
+
+main {
+  padding-left: 10%;
+  width: 90%;
+  text-align: center;
+  color: #545149;
+}
+
+.inner {
+  background-color : #bfa95e;
+  background-image: url("/images/arrow.png");
+  transform: scaleY(-1);
+  filter: invert(100%);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border-color: #bfa95e;
+  outline:none;
+  z-index: 5px;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+}
+#mybutton:hover{
+  transform: translateY(-5px);
 }
 
 /*
