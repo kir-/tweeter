@@ -10,33 +10,38 @@
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,700,700i&display=swap" rel="stylesheet"/>
 
-    <!-- Nav CSS -->
+    <!-- Nav CSS
     <link rel="stylesheet" href="/styles/nav.css" type="text/css">
     
-    <!-- tweet CSS -->
+    tweet CSS
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
 
-    <!-- tweet CSS -->
+    tweet CSS
     <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css">
     
-    <!-- Header CSS -->
+    Header CSS
     <link rel="stylesheet" href="/styles/header.css" type="text/css">
 
-    <!-- App CSS -->
+    Layout CSS
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    Media CSS
+    <link rel="stylesheet" type="text/css" href="/styles/screen.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/styles/css/main.css">
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    
+
   </head>
-
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
@@ -51,14 +56,17 @@
         <div>
             <h2><span id="bold">Grayson</span> Lee</h2>
         </div>
+        <img id="arrowdown" src="/images/arrow.png">
     </header>
     <!-- Page-specific (main) content here -->
     <div id="mybutton">
         <button class="inner"></button>
     </div>
     <main class="container">
-        <section class="new-tweet">
-            <h2>Compose Tweet</h2>
+    </br>
+      <span class="error-box">Too long only 140 characters</span>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
             <form >
               <textarea name="text" placeholder="What are you humming about?"></textarea>
               <div><input type="submit" value="Tweet">

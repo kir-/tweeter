@@ -1,0 +1,58 @@
+header {
+  &.main-header {
+  height: 450px;
+  width: 100%;
+  padding-top: 125px;
+  background-color: coral;
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+
+    img {
+      display: block;
+      width: 256px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 400;
+      margin-top: 0;
+      }
+
+    #arrowdown {
+      filter: invert(100%);
+      transform: scale(0.6);
+      margin-top: 50px;
+      display: none;
+    }
+    
+    @media (max-width:1023px){
+      height: 450px;
+    }
+
+    @media (min-width:0px) and (max-width:600px){
+      height: 1000px;
+      &>img#arrowdown{
+        display: block;
+      }
+    }
+
+    @media (min-width:1024px){
+        margin: 11% 10%;
+        flex: 1;
+        img {
+          position: relative;
+          display: block;
+          width: 256px;
+          margin: 0 auto;
+          top: -65px
+        }
+        h2 {
+          position: relative;
+          text-align: center;
+          font-weight: 400;
+          margin-top: 0;
+          top: -40px;
+         }
+    }
+  }
+}

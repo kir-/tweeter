@@ -1,0 +1,28 @@
+.inner {
+  background-color : #bfa95e;
+  background-image: url("/images/arrow.png");
+  transform: scaleY(-1);
+  filter: invert(100%);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border-color: #bfa95e;
+  outline:none;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 7;
+
+  &:hover{
+    transform: translateY(-5px);
+  }
+}

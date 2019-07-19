@@ -1,0 +1,30 @@
+nav {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  z-index: 5;
+  background-color: #4056A1;
+  color: #ffffff;
+  font-family: 'Bungee';
+  padding: 1.5em;
+
+  #tweet {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    float: right;
+    font-weight: 400;
+  }
+  
+  #btnTweet{
+    position: relative;
+    max-width: 2%;
+    margin: 0;
+    padding-top: 10px;
+    left: 92%;
+    filter: invert(100%);
+  
+    &:hover{
+      transform: translateY(5px);
+    }
+   }
+}

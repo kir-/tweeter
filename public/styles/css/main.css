@@ -1,0 +1,210 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+body #bold {
+  font-weight: 700;
+}
+body nav {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  z-index: 5;
+  background-color: #4056A1;
+  color: #ffffff;
+  font-family: "Bungee";
+  padding: 1.5em;
+}
+body nav #tweet {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  float: right;
+  font-weight: 400;
+}
+body nav #btnTweet {
+  position: relative;
+  max-width: 2%;
+  margin: 0;
+  padding-top: 10px;
+  left: 92%;
+  filter: invert(100%);
+}
+body nav #btnTweet:hover {
+  transform: translateY(5px);
+}
+body header.main-header {
+  height: 450px;
+  width: 100%;
+  padding-top: 125px;
+  background-color: coral;
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+}
+body header.main-header img {
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+}
+body header.main-header h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+}
+body header.main-header #arrowdown {
+  filter: invert(100%);
+  transform: scale(0.6);
+  margin-top: 50px;
+  display: none;
+}
+@media (max-width: 1023px) {
+  body header.main-header {
+    height: 450px;
+  }
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  body header.main-header {
+    height: 1000px;
+  }
+  body header.main-header > img#arrowdown {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  body header.main-header {
+    margin: 11% 10%;
+    flex: 1;
+  }
+  body header.main-header img {
+    position: relative;
+    display: block;
+    width: 256px;
+    margin: 0 auto;
+    top: -65px;
+  }
+  body header.main-header h2 {
+    position: relative;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+    top: -40px;
+  }
+}
+body .inner {
+  background-color: #bfa95e;
+  background-image: url("/images/arrow.png");
+  transform: scaleY(-1);
+  filter: invert(100%);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border-color: #bfa95e;
+  outline: none;
+}
+body #mybutton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 7;
+}
+body #mybutton:hover {
+  transform: translateY(-5px);
+}
+body main {
+  padding-left: 10%;
+  width: 90%;
+  text-align: center;
+  color: #545149;
+}
+body main .new-tweet textarea {
+  border: none;
+  width: 100%;
+  height: 38px;
+  background: transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.32);
+  outline: none;
+  margin: 0px;
+}
+body main .new-tweet input[type=submit] {
+  color: white;
+  font-family: "Bungee";
+  background-color: #4056A1;
+  float: left;
+}
+body main .new-tweet span {
+  font-family: "Bungee";
+  float: right;
+}
+body main .error-box {
+  padding: 2% 30%;
+  color: red;
+  border: solid red;
+  display: none;
+}
+body main #tweet-container header {
+  margin-bottom: 20px;
+}
+body main #tweet-container header span.username {
+  float: right;
+  opacity: 0.5;
+  display: none;
+}
+body main #tweet-container article {
+  margin-top: 20px;
+  position: relative;
+  top: 50px;
+  height: 360px;
+  border: solid 4px;
+  border-color: #545149;
+  text-align: left;
+  padding: 20px;
+  overflow-wrap: break-word;
+  width: 45vw;
+}
+body main #tweet-container article:hover {
+  box-shadow: 5px 10px #4056A1;
+}
+body main #tweet-container article:hover span.username {
+  display: block;
+}
+@media (min-width: 0px) and (max-width: 1023px) {
+  body main #tweet-container article {
+    width: 100%;
+  }
+}
+body main #tweet-container footer {
+  margin-top: 20px;
+  height: 50px;
+  border: solid 3px;
+  border-color: transparent;
+  border-top-color: #545149;
+}
+@media (min-width: 1024px) {
+  body main.container {
+    flex: 1.5;
+    transform: scale(0.8);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

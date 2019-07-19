@@ -29,20 +29,23 @@
 //   }
 // ];
 
-  $(document).ready(function() {
-
+$(document).ready(function() {
   $(document).scroll(function() {
-    if($(document).scrollTop() > 0) {
+    if ($(document).scrollTop() > 0) {
       $("#mybutton").css("display","block");
-    }
-    else {
+    } else {
       $("#mybutton").css("display","none");
     }
   });
 
+  $("#arrowdown").click(function() {
+    console.log($(document).scrollTop());
+    $(document).scrollTop(890);
+  });
+
   $("#mybutton").click(function() {
     $(document).scrollTop(0);
-  })
+  });
 
   const createTweetElement = function(data) {
     let htmlTweet =
@@ -53,7 +56,7 @@
     <span class="username">${data.user.handle}</span>
     </header>
     ${$("<div>").text(data.content.text).html()}
-    <footer>${data.created_at}</footer>
+    <footer>${moment(data.created_at).fromNow()}</footer>
     </article>`;
 
     return htmlTweet;
@@ -75,12 +78,13 @@
   $('.new-tweet').submit((event)=>{
     event.preventDefault();
     if ($('textarea').val().length <= 140) {
+      $(".error-box").css("display","none");
       $.post("/tweets/",$('textarea').serialize(),()=>{
         $('textarea').val('');
         loadtweets(renderTweets);
       });
     } else {
-      alert("Too many chars");
+      $(".error-box").slideToggle(300);
     }
   });
 
