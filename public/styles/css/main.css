@@ -204,6 +204,7 @@ body main #tweet-container footer {
   body main.container {
     flex: 1.5;
     transform: scale(0.8);
+    height: 205vh;
   }
 }
 
