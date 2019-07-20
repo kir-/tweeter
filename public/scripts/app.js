@@ -72,19 +72,24 @@ $(document).ready(function() {
   $('#btnTweet').click(function() {
     $('.new-tweet',function() {
       $('.new-tweet').slideToggle(300);
+      if ($(".error-box").is(":visible")) {
+        $(".error-box").slideToggle(300);
+      }
     });
   });
 
   $('.new-tweet').submit((event)=>{
     event.preventDefault();
-    if ($('textarea').val().length <= 140) {
+    if ($('textarea').val().length <= 140 && $('textarea').val().length > 0) {
       $(".error-box").css("display","none");
       $.post("/tweets/",$('textarea').serialize(),()=>{
         $('textarea').val('');
         loadtweets(renderTweets);
       });
     } else {
-      $(".error-box").slideToggle(300);
+      if (!($(".error-box").is(":visible"))) {
+        $(".error-box").slideToggle(300);
+      }
     }
   });
 
